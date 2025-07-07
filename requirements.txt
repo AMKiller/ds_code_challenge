@@ -5,12 +5,12 @@ scikit-learn==1.4.2
 matplotlib==3.8.4
 seaborn==0.13.2
 joblib==1.5.1
+lightgbm==4.3.0
 
 # Geospatial
 geopandas==1.1.1
 shapely==2.1.1
 pyproj==3.7.1
-h3==3.7.6
 osmnx==2.0.5
 
 # Utility
