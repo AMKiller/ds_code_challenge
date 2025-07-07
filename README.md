@@ -372,6 +372,7 @@ To run the project locally:
 
 ### 1. Open and run the following notebooks:
 
+- `00_data_transformation.ipynb`
 - `01_eda.ipynb`
 - `02_feature_engineering_and_modeling.ipynb`
 
@@ -389,6 +390,13 @@ conda activate geo_model_env
 # Install dependencies
 pip install -r requirements.txt
 ```
+## Notes & Deviations
+
+This project avoids using the `h3` Python library due to known installation and build issues on some systems. Instead, we assign `h3_level8_index` values using a geospatial join approach with `GeoPandas` and the provided `city-hex-polygons-8.geojson` file.
+
+As a result, a small number of service requests may be assigned to slightly different hex indices compared to the provided `df_sr_hex.csv.gz` reference file. This is expected and results from minimal differences in polygon boundary interpretation and centroid placement.
+
+These discrepancies (e.g., fewer than 10 rows out of hundreds of thousands) do not meaningfully impact modeling accuracy or validation outcomes.
 
 ---
 
