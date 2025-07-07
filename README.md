@@ -1,4 +1,3 @@
-80% of storage used … If you run out of space, you can't save to Drive, back up Google Photos or use Gmail. Get 100 GB of storage for R 34,99 R 8,99/month for 2 months.
 # Predicting Municipal Service Request Volumes Using Spatial Features
 
 ---
