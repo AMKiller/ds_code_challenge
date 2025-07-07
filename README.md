@@ -153,6 +153,7 @@ The model performs reasonably well at predicting common, low-to-moderate request
 - Use custom loss functions that penalize high-magnitude errors
 
 ![Improved: Residual Plot](outputs/improved_residuals.png)  
+
 ### Residual Plot Interpretation
 
 This residual plot shows **residuals vs. predicted values** for the regression model.
@@ -271,7 +272,7 @@ This plot shows the residuals (actual − predicted) on the y-axis against predi
   - Incorporation of additional contextual features (e.g., events, population density)
 
 
-![Optimized Feature Importances](outputs/optimized_feature_importance_.png)
+![Optimized Feature Importances](outputs/optimized_feature_importance.png)
 
 ---
 
@@ -290,7 +291,7 @@ This plot shows the residuals (actual − predicted) on the y-axis against predi
 
 ![Optimized Residuals](outputs/final_residuals.png)  
 
-![Optimized Feature Importances](outputs/final_feature_importance_.png)
+![Optimized Feature Importances](outputs/final_feature_importance.png)
 
 # Feature Importance Analysis
 
@@ -352,6 +353,18 @@ These features relate to **infrastructure** or **frequent utility issues**, acti
 
 ---
 
+### Spatial Prediction Comparison
+
+The following maps compare actual and predicted service request counts across the city using hexagonal bins (H3 resolution 8):
+
+- **Left**: Actual request count  
+- **Middle**: Model-predicted request count  
+- **Right**: Residuals (Actual - Predicted), where red indicates underprediction
+
+This visualization highlights spatial patterns in both performance and error distribution, helping to diagnose over/under-serving areas and improve future models.
+
+
+![Spatial Prediction Comparison](outputs/spatial_prediction_comparison.png)
 
 ## Usage
 
